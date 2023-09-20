@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Calculadora de mMdias</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+   <div class="container">
+      <header>
+         <img src="images/images/logo.png" alt="capelo de diploma">
+         <h1>Calculadora de médias</h1>
+      </header>
+      <form id="formAtividade">
+         <input type="text" placeholder="Nome da atividade" id="nAtividade" required>
+         <input type="number" placeholder="Nota" min="0" max="10" id="nNota" required>
+         <button type="submit">Adicionar +</button>
+      </form>
+      <div class="tabela">
+         <table cellspacing = 0><!--Serve para tirar o espaçamento padrão da borda que as tabelas tem-->
+            <thead>
+               <tr>
+                  <th>Nome da atividade</th>
+                  <th>Nota</th>
+                  <th>Aprovado?</th>
+               </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            <tfoot>
+               <tr>
+                  <td>Média final</td>
+                  <td id="mediaFinalValor">---</td>
+                  <td id="mediaFinalResultado">---</td>
+               </tr>
+            </tfoot>
+         </table>
+      </div>  
+   </div>
+   <script src="main.js"></script>
+</body>
+</html>
